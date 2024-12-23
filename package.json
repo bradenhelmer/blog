@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/deno": "^2.0.0",
+    "pocketbase": "^0.24.0",
     "svelte-adapter-deno": "^0.9.1"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
-<script lang="ts" charset="utf-8">
+<script lang="ts">
+	import { currentUser, pb } from "../lib/pb"
 	let { children } = $props();	
 </script>
 <style type="text/css" media="screen">
@@ -18,7 +19,7 @@
 	}
 	.blog_title {
 		grid-column-start: 1;
-		grid-column-end: 4;
+		grid-column-end: 3;
 	}
 
 </style>
@@ -33,6 +34,13 @@
 		<div>
 			Socials	
 		</div>
+		<a href="/login">
+			{#if $currentUser}	
+			Account
+			{:else}
+			Log In	
+			{/if}
+		</a>
 		<a href="/about">
 			About	
 		</a>
