@@ -1,14 +1,10 @@
 <script lang="ts">
-	import { currentUser, pb } from "../../lib/pb"
+	import { currentUser, logout, pb } from "../../lib/pb"
 
 	let password: string;
 
 	async function login() {
 		await pb.collection('_superusers').authWithPassword("bradenhelmeraus@gmail.com", password);
-	}
-
-	function logout() {
-		pb.authStore.clear();
 	}
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentUser, pb } from "../lib/pb"
+	import { currentUser, pb } from "$lib/pb"
 	let { children } = $props();	
 </script>
 <style type="text/css" media="screen">

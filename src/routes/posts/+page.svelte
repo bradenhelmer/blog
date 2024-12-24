@@ -6,7 +6,9 @@
 <div class="wrapper">
 	<ul>
 		{#each data.posts as post}
-			<li>{post.title}</li>	
+			<li>
+				<a href={`/posts/${post.id}`}>{post.title}</a>
+			</li>	
 		{/each}
 	</ul>
 </div>
